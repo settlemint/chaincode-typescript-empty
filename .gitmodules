@@ -1,0 +1,3 @@
+[submodule "lib/btp-chaincode-lifecycle"]
+path = lib/btp-chaincode-lifecycle
+url = https://github.com/settlemint/btp-chaincode-lifecycle.git

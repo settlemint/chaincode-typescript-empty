@@ -1,0 +1,53 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "package",
+      "type": "shell",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh package",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "install",
+      "type": "shell",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh install",
+      "problemMatcher": []
+    },
+    {
+      "label": "approve",
+      "type": "shell",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh approve",
+      "problemMatcher": []
+    },
+    {
+      "label": "commit",
+      "type": "shell",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh commit",
+      "problemMatcher": []
+    },
+    {
+      "label": "init",
+      "type": "shell",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh init",
+      "problemMatcher": []
+    },
+    {
+      "label": "peers",
+      "type": "shell",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh peers",
+      "problemMatcher": []
+    },
+    {
+      "label": "help",
+      "type": "shell",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh help",
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+  ]
+}
