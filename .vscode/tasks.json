@@ -42,6 +42,24 @@
       "problemMatcher": []
     },
     {
+      "label": "list orderers",
+      "type": "shell",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh orderers",
+      "problemMatcher": []
+    },
+    {
+      "label": "list nodes",
+      "type": "shell",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh nodes",
+      "problemMatcher": []
+    },
+    {
+      "label": "list channels",
+      "type": "shell",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh channels",
+      "problemMatcher": []
+    },
+    {
       "label": "help",
       "type": "shell",
       "command": "./lib/btp-chaincode-lifecycle/chaincode.sh help",
