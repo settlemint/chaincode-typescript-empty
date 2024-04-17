@@ -16,7 +16,7 @@
         "sort-keys-recursive": "2.1.10"
       },
       "devDependencies": {
-        "@types/node": "18.19.30",
+        "@types/node": "18.19.31",
         "@typescript-eslint/eslint-plugin": "6.21.0",
         "@typescript-eslint/parser": "6.21.0",
         "eslint": "8.57.0",
@@ -27,7 +27,7 @@
         "prettier": "3.2.5",
         "ts-generator": "0.1.1",
         "ts-node": "10.9.2",
-        "typescript": "5.4.4"
+        "typescript": "5.4.5"
       }
     },
     "node_modules/@aashutoshrathi/word-wrap": {
@@ -512,9 +512,9 @@
       }
     },
     "node_modules/@types/node": {
-      "version": "18.19.30",
-      "resolved": "https://registry.npmjs.org/@types/node/-/node-18.19.30.tgz",
-      "integrity": "sha512-453z1zPuJLVDbyahaa1sSD5C2sht6ZpHp5rgJNs+H8YGqhluCXcuOUmBYsAo0Tos0cHySJ3lVUGbGgLlqIkpyg==",
+      "version": "18.19.31",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-18.19.31.tgz",
+      "integrity": "sha512-ArgCD39YpyyrtFKIqMDvjz79jto5fcI/SVUs2HwB+f0dAzq68yqOdyaSivLiLugSziTpNXLQrVb7RZFmdZzbhA==",
       "dependencies": {
         "undici-types": "~5.26.4"
       }
@@ -4028,9 +4028,9 @@
       }
     },
     "node_modules/typescript": {
-      "version": "5.4.4",
-      "resolved": "https://registry.npmjs.org/typescript/-/typescript-5.4.4.tgz",
-      "integrity": "sha512-dGE2Vv8cpVvw28v8HCPqyb08EzbBURxDpuhJvTrusShUfGnhHBafDsLdS1EhhxyL6BJQE+2cT3dDPAv+MQ6oLw==",
+      "version": "5.4.5",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-5.4.5.tgz",
+      "integrity": "sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==",
       "dev": true,
       "bin": {
         "tsc": "bin/tsc",
