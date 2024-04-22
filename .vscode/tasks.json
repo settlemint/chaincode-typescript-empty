@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "package chaincode",
+      "label": "chaincode lifecycle - 1. package",
       "type": "shell",
       "command": "./lib/btp-chaincode-lifecycle/chaincode.sh package",
       "group": {
@@ -12,51 +12,117 @@
       "problemMatcher": []
     },
     {
-      "label": "deploy chaincode",
+      "label": "chaincode lifecycle - 2. deploy",
       "type": "shell",
-      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh install",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh install ${input:select-peer}",
       "problemMatcher": []
     },
     {
-      "label": "approve chaincode",
+      "label": "chaincode lifecycle - 3. approve",
       "type": "shell",
-      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh approve",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh approve ${input:select-peer}",
       "problemMatcher": []
     },
     {
-      "label": "commit chaincode",
+      "label": "chaincode lifecycle - 4. check commit readiness",
       "type": "shell",
-      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh commit",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh commit-readiness ${input:select-peer}",
       "problemMatcher": []
     },
     {
-      "label": "init chaincode",
+      "label": "chaincode lifecycle - 5. commit",
       "type": "shell",
-      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh init",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh commit ${input:select-peer}",
       "problemMatcher": []
     },
     {
-      "label": "list peers",
+      "label": "chaincode lifecycle - 6. init",
+      "type": "shell",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh init ${input:select-peer}",
+      "problemMatcher": []
+    },
+    {
+      "label": "chaincode - query",
+      "type": "shell",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh query ${input:select-peer} ${input:select-function-name} '[${input:select-function-args}]'",
+      "problemMatcher": []
+    },
+    {
+      "label": "chaincode - invoke",
+      "type": "shell",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh invoke ${input:select-peer} ${input:select-function-name} '[${input:select-function-args}]'",
+      "problemMatcher": []
+    },
+    {
+      "label": "list - deployed chaincode",
+      "type": "shell",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh installed ${input:select-peer}",
+      "problemMatcher": []
+    },
+    {
+      "label": "list - approved chaincode",
+      "type": "shell",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh approved ${input:select-peer}",
+      "problemMatcher": []
+    },
+    {
+      "label": "list - committed chaincode",
+      "type": "shell",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh committed ${input:select-peer}",
+      "problemMatcher": []
+    },
+    {
+      "label": "list - peers",
       "type": "shell",
       "command": "./lib/btp-chaincode-lifecycle/chaincode.sh peers",
       "problemMatcher": []
     },
     {
-      "label": "list orderers",
+      "label": "list - orderers",
       "type": "shell",
       "command": "./lib/btp-chaincode-lifecycle/chaincode.sh orderers",
       "problemMatcher": []
     },
     {
-      "label": "list nodes",
+      "label": "list - nodes",
       "type": "shell",
       "command": "./lib/btp-chaincode-lifecycle/chaincode.sh nodes",
       "problemMatcher": []
     },
     {
-      "label": "list channels",
+      "label": "list - channels",
       "type": "shell",
       "command": "./lib/btp-chaincode-lifecycle/chaincode.sh channels",
+      "problemMatcher": []
+    },
+    {
+      "label": "channel - create",
+      "type": "shell",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh create-channel \"${input:create-channel-name}\" --endorsementPolicy \"${input:create-channel-endorsement-policy}\" --batchTimeoutInSeconds ${input:create-channel-batch-timeout-seconds} --maxMessageCount ${input:create-channel-max-message-count} --absoluteMaxMB ${input:create-channel-absolute-max-mb} --preferredMaxMB ${input:create-channel-preferred-max-mb}",
+      "problemMatcher": []
+    },
+    {
+      "label": "channel - orderer join",
+      "type": "shell",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh  orderer-join-channel ${input:select-orderer} ${input:select-channel}",
+      "problemMatcher": []
+    },
+    {
+      "label": "channel - orderer leave",
+      "type": "shell",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh orderer-leave-channel ${input:select-orderer} ${input:select-channel}",
+      "problemMatcher": []
+    },
+    {
+      "label": "channel - peer join",
+      "type": "shell",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh peer-join-channel ${input:select-peer} ${input:select-channel}",
+      "problemMatcher": []
+    },
+    {
+      "label": "channel - peer leave",
+      "type": "shell",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh peer-leave-channel ${input:select-peer} ${input:select-channel}",
       "problemMatcher": []
     },
     {
@@ -66,5 +132,73 @@
       "problemMatcher": []
     }
   ],
-  "inputs": []
+  "inputs": [
+    {
+      "id": "select-peer",
+      "description": "Which peer do you want to use?",
+      "default": "default",
+      "type": "promptString"
+    },
+    {
+      "id": "select-orderer",
+      "description": "Which orderer do you want to use?",
+      "default": "default",
+      "type": "promptString"
+    },
+    {
+      "id": "select-channel",
+      "description": "Which channel do you want to use?",
+      "default": "default",
+      "type": "promptString"
+    },
+    {
+      "id": "select-function-name",
+      "description": "Which function do you want to call?",
+      "default": "",
+      "type": "promptString"
+    },
+    {
+      "id": "select-function-args",
+      "description": "Which function arguments do you want to pass?",
+      "default": "\"arg1\", \"arg2\"",
+      "type": "promptString"
+    },
+    {
+      "id": "create-channel-name",
+      "description": "How do you want to name your new channel?",
+      "default": "",
+      "type": "promptString"
+    },
+    {
+      "id": "create-channel-endorsement-policy",
+      "description": "Which endorsement policy do you want to use?",
+      "default": "MAJORITY",
+      "type": "pickString",
+      "options": ["MAJORITY", "ALL"]
+    },
+    {
+      "id": "create-channel-batch-timeout-seconds",
+      "description": "Batch timeout in seconds?",
+      "default": "2",
+      "type": "promptString"
+    },
+    {
+      "id": "create-channel-max-message-count",
+      "description": " Maximum of transactions per block?",
+      "default": "500",
+      "type": "promptString"
+    },
+    {
+      "id": "create-channel-absolute-max-mb",
+      "description": "Absolute maximum MB for block size?",
+      "default": "10",
+      "type": "promptString"
+    },
+    {
+      "id": "create-channel-preferred-max-mb",
+      "description": "Preferred maximum MB for block size?",
+      "default": "2",
+      "type": "promptString"
+    }
+  ]
 }
