@@ -23,8 +23,8 @@ dependencies:
 
 devDependencies:
   '@types/node':
-    specifier: 18.19.33
-    version: 18.19.33
+    specifier: 18.19.34
+    version: 18.19.34
   '@typescript-eslint/eslint-plugin':
     specifier: 6.21.0
     version: 6.21.0(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(typescript@5.4.5)
@@ -54,7 +54,7 @@ devDependencies:
     version: 0.1.1
   ts-node:
     specifier: 10.9.2
-    version: 10.9.2(@types/node@18.19.33)(typescript@5.4.5)
+    version: 10.9.2(@types/node@18.19.34)(typescript@5.4.5)
   typescript:
     specifier: 5.4.5
     version: 5.4.5
@@ -141,7 +141,7 @@ packages:
     engines: {node: ^8.13.0 || >=10.10.0}
     dependencies:
       '@grpc/proto-loader': 0.7.12
-      '@types/node': 18.19.33
+      '@types/node': 18.19.34
     dev: false
 
   /@grpc/proto-loader@0.6.13:
@@ -310,15 +310,15 @@ packages:
   /@types/mkdirp@0.5.2:
     resolution: {integrity: sha512-U5icWpv7YnZYGsN4/cmh3WD2onMY0aJIiTE6+51TwJCttdHvtCYmkBNOobHlXwrJRL0nkH9jH4kD+1FAdMN4Tg==}
     dependencies:
-      '@types/node': 18.19.33
+      '@types/node': 18.19.34
     dev: true
 
   /@types/node@16.18.96:
     resolution: {integrity: sha512-84iSqGXoO+Ha16j8pRZ/L90vDMKX04QTYMTfYeE1WrjWaZXuchBehGUZEpNgx7JnmlrIHdnABmpjrQjhCnNldQ==}
     dev: false
 
-  /@types/node@18.19.33:
-    resolution: {integrity: sha512-NR9+KrpSajr2qBVp/Yt5TU/rp+b5Mayi3+OlMlcg2cVCfRmcG5PWZ7S4+MG9PZ5gWBoc9Pd0BKSRViuBCRPu0A==}
+  /@types/node@18.19.34:
+    resolution: {integrity: sha512-eXF4pfBNV5DAMKGbI02NnDtWrQ40hAN558/2vvS4gMpMIxaf6JmD7YjnZbq0Q9TDSSkKBamime8ewRoomHdt4g==}
     dependencies:
       undici-types: 5.26.5
 
@@ -329,7 +329,7 @@ packages:
   /@types/resolve@0.0.8:
     resolution: {integrity: sha512-auApPaJf3NPfe18hSoJkp8EbZzer2ISk7o8mCC3M9he/a04+gbMF97NkpD2S8riMGvm4BMRI59/SZQSaLTKpsQ==}
     dependencies:
-      '@types/node': 18.19.33
+      '@types/node': 18.19.34
     dev: true
 
   /@types/semver@7.5.8:
@@ -1957,7 +1957,7 @@ packages:
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
       '@types/long': 4.0.2
-      '@types/node': 18.19.33
+      '@types/node': 18.19.34
       long: 4.0.0
     dev: false
 
@@ -1976,7 +1976,7 @@ packages:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 18.19.33
+      '@types/node': 18.19.34
       long: 5.2.3
     dev: false
 
@@ -2293,7 +2293,7 @@ packages:
       ts-essentials: 1.0.4
     dev: true
 
-  /ts-node@10.9.2(@types/node@18.19.33)(typescript@5.4.5):
+  /ts-node@10.9.2(@types/node@18.19.34)(typescript@5.4.5):
     resolution: {integrity: sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==}
     hasBin: true
     peerDependencies:
@@ -2312,7 +2312,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 18.19.33
+      '@types/node': 18.19.34
       acorn: 8.11.3
       acorn-walk: 8.3.2
       arg: 4.1.3
