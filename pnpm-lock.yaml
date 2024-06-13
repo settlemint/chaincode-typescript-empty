@@ -9,11 +9,11 @@ dependencies:
     specifier: 0.5.1
     version: 0.5.1
   fabric-contract-api:
-    specifier: 2.5.5
-    version: 2.5.5
+    specifier: 2.5.6
+    version: 2.5.6
   fabric-shim:
-    specifier: 2.5.5
-    version: 2.5.5
+    specifier: 2.5.6
+    version: 2.5.6
   json-stringify-deterministic:
     specifier: 1.0.12
     version: 1.0.12
@@ -136,28 +136,16 @@ packages:
       tweetnacl: 1.0.3
     dev: false
 
-  /@grpc/grpc-js@1.8.15:
-    resolution: {integrity: sha512-H2Bu/w6+oQ58DsRbQol66ERBk3V5ZIak/z/MDx0T4EgDnJWps807I6BvTjq0v6UvZtOcLO+ur+Q9wvniqu3OJA==}
-    engines: {node: ^8.13.0 || >=10.10.0}
+  /@grpc/grpc-js@1.10.9:
+    resolution: {integrity: sha512-5tcgUctCG0qoNyfChZifz2tJqbRbXVO9J7X6duFcOjY3HUNCxg5D0ZCK7EP9vIcZ0zRpLU9bWkyCqVCLZ46IbQ==}
+    engines: {node: '>=12.10.0'}
     dependencies:
-      '@grpc/proto-loader': 0.7.12
-      '@types/node': 18.19.34
+      '@grpc/proto-loader': 0.7.13
+      '@js-sdsl/ordered-map': 4.4.2
     dev: false
 
-  /@grpc/proto-loader@0.6.13:
-    resolution: {integrity: sha512-FjxPYDRTn6Ec3V0arm1FtSpmP6V50wuph2yILpyvTKzjc76oDdoihXqM1DzOW5ubvCC8GivfCnNtfaRE8myJ7g==}
-    engines: {node: '>=6'}
-    hasBin: true
-    dependencies:
-      '@types/long': 4.0.2
-      lodash.camelcase: 4.3.0
-      long: 4.0.0
-      protobufjs: 6.11.4
-      yargs: 16.2.0
-    dev: false
-
-  /@grpc/proto-loader@0.7.12:
-    resolution: {integrity: sha512-DCVwMxqYzpUCiDMl7hQ384FqP4T3DbNpXU8pt681l3UWCip1WUiD5JrkImUwCB9a7f2cq4CUTmi5r/xIMRPY1Q==}
+  /@grpc/proto-loader@0.7.13:
+    resolution: {integrity: sha512-AiXO/bfe9bmxBjxxtYxFAXGZvMaN5s8kO+jBHAJCON8rJoB5YS/D6X7ZNc6XQkuHNmyl4CYaMI1fJ/Gn27RGGw==}
     engines: {node: '>=6'}
     hasBin: true
     dependencies:
@@ -187,11 +175,11 @@ packages:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     dev: true
 
-  /@hyperledger/fabric-protos@0.1.0-dev.2300102001.1:
-    resolution: {integrity: sha512-MtVXncAQz09PYOcFZUB2QbS9eVwbSGnULPuZKqFr9iScbasG194QyN6Tq8cl+kthQGSoBQORyjCIbrGIaN8EFQ==}
+  /@hyperledger/fabric-protos@0.2.1:
+    resolution: {integrity: sha512-qjm0vIQIfCall804tWDeA8p/mUfu14sl5Sj+PbOn2yDKJq+7ThoIhNsLAqf+BCxUfqsoqQq6AojhqQeTFyOOqg==}
+    engines: {node: '>=14.15.0'}
     dependencies:
-      '@grpc/grpc-js': 1.8.15
-      '@types/google-protobuf': 3.15.12
+      '@grpc/grpc-js': 1.10.9
       google-protobuf: 3.21.2
     dev: false
 
@@ -210,6 +198,10 @@ packages:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
+
+  /@js-sdsl/ordered-map@4.4.2:
+    resolution: {integrity: sha512-iUKgm52T8HOE/makSxjqoWhe95ZJA1/G1sYsGev2JDKUSS14KAgg1LHb+Ba+IPow0xflbnSkOsZcO08C7w1gYw==}
+    dev: false
 
   /@nodelib/fs.scandir@2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -291,10 +283,6 @@ packages:
     resolution: {integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==}
     dev: true
 
-  /@types/google-protobuf@3.15.12:
-    resolution: {integrity: sha512-40um9QqwHjRS92qnOaDpL7RmDK15NuZYo9HihiJRbYkMQZlWnuH8AdvbMy8/o6lgLmKbDUKa+OALCltHdbOTpQ==}
-    dev: false
-
   /@types/json-schema@7.0.15:
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
     dev: true
@@ -302,10 +290,6 @@ packages:
   /@types/json5@0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
-
-  /@types/long@4.0.2:
-    resolution: {integrity: sha512-MqTGEo5bj5t157U6fA/BiDynNkn0YknVdh48CMPkTSpFTVmvao5UQmm7uEF6xBEo7qIMAlY/JSleYaE6VOdpaA==}
-    dev: false
 
   /@types/mkdirp@0.5.2:
     resolution: {integrity: sha512-U5icWpv7YnZYGsN4/cmh3WD2onMY0aJIiTE6+51TwJCttdHvtCYmkBNOobHlXwrJRL0nkH9jH4kD+1FAdMN4Tg==}
@@ -673,14 +657,6 @@ packages:
 
   /class-transformer@0.5.1:
     resolution: {integrity: sha512-SQa1Ws6hUbfC98vKGxZH3KFY0Y1lm5Zm0SY8XX9zbK7FJCyVEac3ATW0RIpwzW+oOfmHE5PMPufDG9hCfoEOMw==}
-    dev: false
-
-  /cliui@7.0.4:
-    resolution: {integrity: sha512-OcRE68cOsVMXp1Yvonl/fzkQOyjLSu/8bhPDfQt0e0/Eb283TKP20Fs2MqoPsr9SwA595rRCA+QMzYc9nBP+JQ==}
-    dependencies:
-      string-width: 4.2.3
-      strip-ansi: 6.0.1
-      wrap-ansi: 7.0.0
     dev: false
 
   /cliui@8.0.1:
@@ -1186,36 +1162,35 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /fabric-contract-api@2.5.5:
-    resolution: {integrity: sha512-kG5AJr8QLmWwlH8/VA/3ymzhOXKj0F6HghrUllDFPzz+b/Zvc+nDNa8Ic5tKatbMhwftcJXSrk0U1cV9RZeOQw==}
+  /fabric-contract-api@2.5.6:
+    resolution: {integrity: sha512-AosGb8tA+Jgt+pqMEgYNB3/J/P5QuWOC7yhXbhDmAAwUzn4Sc7pdWDICH1YyrFGZNFxMGQmqJmLVWUX8BKHy0w==}
     engines: {node: '>=18'}
     dependencies:
       class-transformer: 0.4.0
-      fabric-shim-api: 2.5.5
+      fabric-shim-api: 2.5.6
       fast-safe-stringify: 2.1.1
       get-params: 0.1.2
       reflect-metadata: 0.1.14
       winston: 3.13.0
     dev: false
 
-  /fabric-shim-api@2.5.5:
-    resolution: {integrity: sha512-97XOF2SjFLK/R4cBNg9STOZzBzbLiYh6WPBbPjpGsYKh6S70PxRkD4s1579nmsoFE9OQVoR6+FpWr4n3mB/6/A==}
+  /fabric-shim-api@2.5.6:
+    resolution: {integrity: sha512-1L0nO7CJ31/gEOWKWHEeCqgB5HkqPVfRbpcS7L9eTscT7tffjg2OkZISvC+a7RiqihL0iyrXNBgBg5MwlSSN9g==}
     engines: {eslint: ^6.6.0, node: '>=18'}
     dev: false
 
-  /fabric-shim@2.5.5:
-    resolution: {integrity: sha512-mGpp8OS5omRqGRCSCGYVfxr81c4+jqy2nznDJ6Rs9qQ7PPEn7wVburWetNgz5liQ9ksAfryw5r6hoYT1VqZRmQ==}
+  /fabric-shim@2.5.6:
+    resolution: {integrity: sha512-4Y8WNFhYuQ9QYSEgPXWdlXnrXjwOlM10sQQzE4kJ7cDh8a4LX0rn44FxtxTCB18lnzrSLMZ8/8Cr5m0c9NeXWA==}
     engines: {node: '>=18'}
     hasBin: true
     dependencies:
       '@fidm/x509': 1.2.1
-      '@grpc/grpc-js': 1.8.15
-      '@grpc/proto-loader': 0.6.13
-      '@hyperledger/fabric-protos': 0.1.0-dev.2300102001.1
+      '@grpc/grpc-js': 1.10.9
+      '@hyperledger/fabric-protos': 0.2.1
       '@types/node': 16.18.96
       ajv: 6.12.6
-      fabric-contract-api: 2.5.5
-      fabric-shim-api: 2.5.5
+      fabric-contract-api: 2.5.6
+      fabric-shim-api: 2.5.6
       fast-safe-stringify: 2.1.1
       long: 5.2.3
       reflect-metadata: 0.1.14
@@ -1731,10 +1706,6 @@ packages:
       triple-beam: 1.4.1
     dev: false
 
-  /long@4.0.0:
-    resolution: {integrity: sha512-XsP+KhQif4bjX1kbuSiySJFNAehNxgLb6hPRGJ9QsUr8ajHkuXGdrHmFUTUUXhDwVX2R5bY4JNZEwbUiMhV+MA==}
-    dev: false
-
   /long@5.2.3:
     resolution: {integrity: sha512-lcHwpNoggQTObv5apGNCTdJrO69eHOZMi4BNC+rTLER8iHAqGrUVeLh/irVIM7zTw2bOXA8T6uNPeujwOLg/2Q==}
     dev: false
@@ -1940,26 +1911,6 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
     dev: true
-
-  /protobufjs@6.11.4:
-    resolution: {integrity: sha512-5kQWPaJHi1WoCpjTGszzQ32PG2F4+wRY6BmAT4Vfw56Q2FZ4YZzK20xUYQH4YkfehY1e6QSICrJquM6xXZNcrw==}
-    hasBin: true
-    requiresBuild: true
-    dependencies:
-      '@protobufjs/aspromise': 1.1.2
-      '@protobufjs/base64': 1.1.2
-      '@protobufjs/codegen': 2.0.4
-      '@protobufjs/eventemitter': 1.1.0
-      '@protobufjs/fetch': 1.1.0
-      '@protobufjs/float': 1.0.2
-      '@protobufjs/inquire': 1.1.0
-      '@protobufjs/path': 1.1.2
-      '@protobufjs/pool': 1.1.0
-      '@protobufjs/utf8': 1.1.0
-      '@types/long': 4.0.2
-      '@types/node': 18.19.34
-      long: 4.0.0
-    dev: false
 
   /protobufjs@7.2.6:
     resolution: {integrity: sha512-dgJaEDDL6x8ASUZ1YqWciTRrdOuYNzoOf27oHNfdyvKqHr5i0FV7FSLU+aIeFjyFgVxrpTOtQUi0BLLBymZaBw==}
@@ -2501,27 +2452,9 @@ packages:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
     dev: true
 
-  /yargs-parser@20.2.9:
-    resolution: {integrity: sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==}
-    engines: {node: '>=10'}
-    dev: false
-
   /yargs-parser@21.1.1:
     resolution: {integrity: sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==}
     engines: {node: '>=12'}
-    dev: false
-
-  /yargs@16.2.0:
-    resolution: {integrity: sha512-D1mvvtDG0L5ft/jGWkLpG1+m0eQxOfaBvTNELraWj22wSVUMWxZUvYgJYcKh6jGGIkJFhH4IZPQhR4TKpc8mBw==}
-    engines: {node: '>=10'}
-    dependencies:
-      cliui: 7.0.4
-      escalade: 3.1.2
-      get-caller-file: 2.0.5
-      require-directory: 2.1.1
-      string-width: 4.2.3
-      y18n: 5.0.8
-      yargs-parser: 20.2.9
     dev: false
 
   /yargs@17.7.2:
