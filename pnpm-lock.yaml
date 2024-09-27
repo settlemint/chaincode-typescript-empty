@@ -9,11 +9,11 @@ dependencies:
     specifier: 0.5.1
     version: 0.5.1
   fabric-contract-api:
-    specifier: 2.5.6
-    version: 2.5.6
+    specifier: 2.5.7
+    version: 2.5.7
   fabric-shim:
-    specifier: 2.5.6
-    version: 2.5.6
+    specifier: 2.5.7
+    version: 2.5.7
   json-stringify-deterministic:
     specifier: 1.0.12
     version: 1.0.12
@@ -136,8 +136,8 @@ packages:
       tweetnacl: 1.0.3
     dev: false
 
-  /@grpc/grpc-js@1.10.9:
-    resolution: {integrity: sha512-5tcgUctCG0qoNyfChZifz2tJqbRbXVO9J7X6duFcOjY3HUNCxg5D0ZCK7EP9vIcZ0zRpLU9bWkyCqVCLZ46IbQ==}
+  /@grpc/grpc-js@1.11.3:
+    resolution: {integrity: sha512-i9UraDzFHMR+Iz/MhFLljT+fCpgxZ3O6CxwGJ8YuNYHJItIHUzKJpW2LvoFZNnGPwqc9iWy9RAucxV0JoR9aUQ==}
     engines: {node: '>=12.10.0'}
     dependencies:
       '@grpc/proto-loader': 0.7.13
@@ -177,11 +177,11 @@ packages:
     deprecated: Use @eslint/object-schema instead
     dev: true
 
-  /@hyperledger/fabric-protos@0.2.1:
-    resolution: {integrity: sha512-qjm0vIQIfCall804tWDeA8p/mUfu14sl5Sj+PbOn2yDKJq+7ThoIhNsLAqf+BCxUfqsoqQq6AojhqQeTFyOOqg==}
-    engines: {node: '>=14.15.0'}
+  /@hyperledger/fabric-protos@0.2.2:
+    resolution: {integrity: sha512-p5Meqig8DqsNDygoFMfAp0rqZQDtaatwUaYGF0LQvKS77ZLjP8WxvZ4/9zsr8aNs/4NkohKcq7ZUtEK70iBcrQ==}
+    engines: {node: '>=16.13.0'}
     dependencies:
-      '@grpc/grpc-js': 1.10.9
+      '@grpc/grpc-js': 1.11.3
       google-protobuf: 3.21.2
     dev: false
 
@@ -1156,35 +1156,35 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /fabric-contract-api@2.5.6:
-    resolution: {integrity: sha512-AosGb8tA+Jgt+pqMEgYNB3/J/P5QuWOC7yhXbhDmAAwUzn4Sc7pdWDICH1YyrFGZNFxMGQmqJmLVWUX8BKHy0w==}
+  /fabric-contract-api@2.5.7:
+    resolution: {integrity: sha512-WWS/IzG/iTmEkeVsdVPbT1NQLRJVu9uCKiHnNlzl+vT9U4n6Ce67cDIbsyYCsOPHVTyF1rFeHRqdfvgh5V3ymA==}
     engines: {node: '>=18'}
     dependencies:
       class-transformer: 0.4.0
-      fabric-shim-api: 2.5.6
+      fabric-shim-api: 2.5.7
       fast-safe-stringify: 2.1.1
       get-params: 0.1.2
       reflect-metadata: 0.1.14
       winston: 3.13.0
     dev: false
 
-  /fabric-shim-api@2.5.6:
-    resolution: {integrity: sha512-1L0nO7CJ31/gEOWKWHEeCqgB5HkqPVfRbpcS7L9eTscT7tffjg2OkZISvC+a7RiqihL0iyrXNBgBg5MwlSSN9g==}
+  /fabric-shim-api@2.5.7:
+    resolution: {integrity: sha512-KHLpVrzDxZhdUOaeW24XtMZ0lM+Vb6pfMyRhC0zIjx6JmJgSx71vPtdHII0yNoIpButocIeTwGd8MH3RVfUImg==}
     engines: {eslint: ^6.6.0, node: '>=18'}
     dev: false
 
-  /fabric-shim@2.5.6:
-    resolution: {integrity: sha512-4Y8WNFhYuQ9QYSEgPXWdlXnrXjwOlM10sQQzE4kJ7cDh8a4LX0rn44FxtxTCB18lnzrSLMZ8/8Cr5m0c9NeXWA==}
+  /fabric-shim@2.5.7:
+    resolution: {integrity: sha512-owLaudoVUeTJrxytKxkO/XesBhQdskpQfeFkyaBFgr5MARjsBlGGQge/WFVFjgTcv6UWIoJrrEOEI14QMCY1bQ==}
     engines: {node: '>=18'}
     hasBin: true
     dependencies:
       '@fidm/x509': 1.2.1
-      '@grpc/grpc-js': 1.10.9
-      '@hyperledger/fabric-protos': 0.2.1
+      '@grpc/grpc-js': 1.11.3
+      '@hyperledger/fabric-protos': 0.2.2
       '@types/node': 16.18.96
       ajv: 6.12.6
-      fabric-contract-api: 2.5.6
-      fabric-shim-api: 2.5.6
+      fabric-contract-api: 2.5.7
+      fabric-shim-api: 2.5.7
       fast-safe-stringify: 2.1.1
       long: 5.2.3
       reflect-metadata: 0.1.14
