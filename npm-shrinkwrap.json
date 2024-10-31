@@ -16,7 +16,7 @@
         "sort-keys-recursive": "2.1.10"
       },
       "devDependencies": {
-        "@types/node": "18.19.61",
+        "@types/node": "18.19.63",
         "@typescript-eslint/eslint-plugin": "7.18.0",
         "@typescript-eslint/parser": "7.18.0",
         "eslint": "8.57.1",
@@ -450,9 +450,9 @@
       }
     },
     "node_modules/@types/node": {
-      "version": "18.19.61",
-      "resolved": "https://registry.npmjs.org/@types/node/-/node-18.19.61.tgz",
-      "integrity": "sha512-z8fH66NcVkDzBItOao+Nyh0fiy7CYdxIyxnNCcZ60aY0I+EA/y4TSi/S/W9i8DIQvwVo7a0pgzAxmDeNnqrpkw==",
+      "version": "18.19.63",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-18.19.63.tgz",
+      "integrity": "sha512-hcUB7THvrGmaEcPcvUZCZtQ2Z3C+UR/aOcraBLCvTsFMh916Gc1kCCYcfcMuB76HM2pSerxl1PoP3KnmHzd9Lw==",
       "license": "MIT",
       "dependencies": {
         "undici-types": "~5.26.4"
