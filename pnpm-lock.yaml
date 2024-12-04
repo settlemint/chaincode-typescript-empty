@@ -9,11 +9,11 @@ dependencies:
     specifier: 0.5.1
     version: 0.5.1
   fabric-contract-api:
-    specifier: 2.5.7
-    version: 2.5.7
+    specifier: 2.5.8
+    version: 2.5.8
   fabric-shim:
-    specifier: 2.5.7
-    version: 2.5.7
+    specifier: 2.5.8
+    version: 2.5.8
   json-stringify-deterministic:
     specifier: 1.0.12
     version: 1.0.12
@@ -1157,25 +1157,25 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /fabric-contract-api@2.5.7:
-    resolution: {integrity: sha512-WWS/IzG/iTmEkeVsdVPbT1NQLRJVu9uCKiHnNlzl+vT9U4n6Ce67cDIbsyYCsOPHVTyF1rFeHRqdfvgh5V3ymA==}
+  /fabric-contract-api@2.5.8:
+    resolution: {integrity: sha512-Hc9bYDV1WI0zhYSXuGbmFq8NqPQvBZdnBfte98Nkc8Vy7V+A9+dBSGBc3puL652qjmvGTYUSN+DZq3tGDvlkQw==}
     engines: {node: '>=18'}
     dependencies:
       class-transformer: 0.4.0
-      fabric-shim-api: 2.5.7
+      fabric-shim-api: 2.5.8
       fast-safe-stringify: 2.1.1
       get-params: 0.1.2
       reflect-metadata: 0.1.14
       winston: 3.13.0
     dev: false
 
-  /fabric-shim-api@2.5.7:
-    resolution: {integrity: sha512-KHLpVrzDxZhdUOaeW24XtMZ0lM+Vb6pfMyRhC0zIjx6JmJgSx71vPtdHII0yNoIpButocIeTwGd8MH3RVfUImg==}
+  /fabric-shim-api@2.5.8:
+    resolution: {integrity: sha512-O+lg61KDqJn1Mr+KSPaq2nnjFkusp3bLC9CjNcMiNVWtQXqXXQtOQquoSWUeUVtRtUS4WL9zMBaU6Ynz7h7U7w==}
     engines: {eslint: ^6.6.0, node: '>=18'}
     dev: false
 
-  /fabric-shim@2.5.7:
-    resolution: {integrity: sha512-owLaudoVUeTJrxytKxkO/XesBhQdskpQfeFkyaBFgr5MARjsBlGGQge/WFVFjgTcv6UWIoJrrEOEI14QMCY1bQ==}
+  /fabric-shim@2.5.8:
+    resolution: {integrity: sha512-9j4ehj6kfz+dld4yuxN8nYsXcr8s5WiqdPrse1szEAPTFEhQU5vJ1/Z8CeVZXTYAXekrI4i79MjPHNU54RwD8A==}
     engines: {node: '>=18'}
     hasBin: true
     dependencies:
@@ -1184,8 +1184,8 @@ packages:
       '@hyperledger/fabric-protos': 0.2.2
       '@types/node': 16.18.96
       ajv: 6.12.6
-      fabric-contract-api: 2.5.7
-      fabric-shim-api: 2.5.7
+      fabric-contract-api: 2.5.8
+      fabric-shim-api: 2.5.8
       fast-safe-stringify: 2.1.1
       long: 5.2.3
       reflect-metadata: 0.1.14
