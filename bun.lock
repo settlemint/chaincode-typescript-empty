@@ -4,8 +4,8 @@
     "": {
       "dependencies": {
         "class-transformer": "0.5.1",
-        "fabric-contract-api": "2.5.7",
-        "fabric-shim": "2.5.7",
+        "fabric-contract-api": "2.5.8",
+        "fabric-shim": "2.5.8",
         "json-stringify-deterministic": "1.0.12",
         "sort-keys-recursive": "2.1.10",
       },
@@ -279,11 +279,11 @@
 
     "esutils": ["esutils@2.0.3", "", {}, "sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g=="],
 
-    "fabric-contract-api": ["fabric-contract-api@2.5.7", "", { "dependencies": { "class-transformer": "^0.4.0", "fabric-shim-api": "2.5.7", "fast-safe-stringify": "^2.1.1", "get-params": "^0.1.2", "reflect-metadata": "^0.1.13", "winston": "^3.7.2" } }, "sha512-WWS/IzG/iTmEkeVsdVPbT1NQLRJVu9uCKiHnNlzl+vT9U4n6Ce67cDIbsyYCsOPHVTyF1rFeHRqdfvgh5V3ymA=="],
+    "fabric-contract-api": ["fabric-contract-api@2.5.8", "", { "dependencies": { "class-transformer": "^0.4.0", "fabric-shim-api": "2.5.8", "fast-safe-stringify": "^2.1.1", "get-params": "^0.1.2", "reflect-metadata": "^0.1.13", "winston": "^3.7.2" } }, "sha512-Hc9bYDV1WI0zhYSXuGbmFq8NqPQvBZdnBfte98Nkc8Vy7V+A9+dBSGBc3puL652qjmvGTYUSN+DZq3tGDvlkQw=="],
 
-    "fabric-shim": ["fabric-shim@2.5.7", "", { "dependencies": { "@fidm/x509": "^1.2.1", "@grpc/grpc-js": "^1.11.0", "@hyperledger/fabric-protos": "^0.2.2", "@types/node": "^16.11.1", "ajv": "^6.12.2", "fabric-contract-api": "2.5.7", "fabric-shim-api": "2.5.7", "fast-safe-stringify": "^2.1.1", "long": "^5.2.3", "reflect-metadata": "^0.1.13", "winston": "^3.7.2", "yargs": "^17.4.0", "yargs-parser": "^21.0.1" }, "bin": { "fabric-chaincode-node": "cli.js" } }, "sha512-owLaudoVUeTJrxytKxkO/XesBhQdskpQfeFkyaBFgr5MARjsBlGGQge/WFVFjgTcv6UWIoJrrEOEI14QMCY1bQ=="],
+    "fabric-shim": ["fabric-shim@2.5.8", "", { "dependencies": { "@fidm/x509": "^1.2.1", "@grpc/grpc-js": "^1.11.0", "@hyperledger/fabric-protos": "^0.2.2", "@types/node": "^16.11.1", "ajv": "^6.12.2", "fabric-contract-api": "2.5.8", "fabric-shim-api": "2.5.8", "fast-safe-stringify": "^2.1.1", "long": "^5.2.3", "reflect-metadata": "^0.1.13", "winston": "^3.7.2", "yargs": "^17.4.0", "yargs-parser": "^21.0.1" }, "bin": { "fabric-chaincode-node": "cli.js" } }, "sha512-9j4ehj6kfz+dld4yuxN8nYsXcr8s5WiqdPrse1szEAPTFEhQU5vJ1/Z8CeVZXTYAXekrI4i79MjPHNU54RwD8A=="],
 
-    "fabric-shim-api": ["fabric-shim-api@2.5.7", "", {}, "sha512-KHLpVrzDxZhdUOaeW24XtMZ0lM+Vb6pfMyRhC0zIjx6JmJgSx71vPtdHII0yNoIpButocIeTwGd8MH3RVfUImg=="],
+    "fabric-shim-api": ["fabric-shim-api@2.5.8", "", {}, "sha512-O+lg61KDqJn1Mr+KSPaq2nnjFkusp3bLC9CjNcMiNVWtQXqXXQtOQquoSWUeUVtRtUS4WL9zMBaU6Ynz7h7U7w=="],
 
     "fast-deep-equal": ["fast-deep-equal@3.1.3", "", {}, "sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q=="],
 
