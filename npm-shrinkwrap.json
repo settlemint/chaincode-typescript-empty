@@ -10,8 +10,8 @@
       "license": "SEE LICENSE IN LICENSE.md",
       "dependencies": {
         "class-transformer": "0.5.1",
-        "fabric-contract-api": "2.5.7",
-        "fabric-shim": "2.5.7",
+        "fabric-contract-api": "2.5.8",
+        "fabric-shim": "2.5.8",
         "json-stringify-deterministic": "1.0.12",
         "sort-keys-recursive": "2.1.10"
       },
@@ -1806,13 +1806,13 @@
       }
     },
     "node_modules/fabric-contract-api": {
-      "version": "2.5.7",
-      "resolved": "https://registry.npmjs.org/fabric-contract-api/-/fabric-contract-api-2.5.7.tgz",
-      "integrity": "sha512-WWS/IzG/iTmEkeVsdVPbT1NQLRJVu9uCKiHnNlzl+vT9U4n6Ce67cDIbsyYCsOPHVTyF1rFeHRqdfvgh5V3ymA==",
+      "version": "2.5.8",
+      "resolved": "https://registry.npmjs.org/fabric-contract-api/-/fabric-contract-api-2.5.8.tgz",
+      "integrity": "sha512-Hc9bYDV1WI0zhYSXuGbmFq8NqPQvBZdnBfte98Nkc8Vy7V+A9+dBSGBc3puL652qjmvGTYUSN+DZq3tGDvlkQw==",
       "license": "Apache-2.0",
       "dependencies": {
         "class-transformer": "^0.4.0",
-        "fabric-shim-api": "2.5.7",
+        "fabric-shim-api": "2.5.8",
         "fast-safe-stringify": "^2.1.1",
         "get-params": "^0.1.2",
         "reflect-metadata": "^0.1.13",
@@ -1829,9 +1829,9 @@
       "license": "MIT"
     },
     "node_modules/fabric-shim": {
-      "version": "2.5.7",
-      "resolved": "https://registry.npmjs.org/fabric-shim/-/fabric-shim-2.5.7.tgz",
-      "integrity": "sha512-owLaudoVUeTJrxytKxkO/XesBhQdskpQfeFkyaBFgr5MARjsBlGGQge/WFVFjgTcv6UWIoJrrEOEI14QMCY1bQ==",
+      "version": "2.5.8",
+      "resolved": "https://registry.npmjs.org/fabric-shim/-/fabric-shim-2.5.8.tgz",
+      "integrity": "sha512-9j4ehj6kfz+dld4yuxN8nYsXcr8s5WiqdPrse1szEAPTFEhQU5vJ1/Z8CeVZXTYAXekrI4i79MjPHNU54RwD8A==",
       "license": "Apache-2.0",
       "dependencies": {
         "@fidm/x509": "^1.2.1",
@@ -1839,8 +1839,8 @@
         "@hyperledger/fabric-protos": "^0.2.2",
         "@types/node": "^16.11.1",
         "ajv": "^6.12.2",
-        "fabric-contract-api": "2.5.7",
-        "fabric-shim-api": "2.5.7",
+        "fabric-contract-api": "2.5.8",
+        "fabric-shim-api": "2.5.8",
         "fast-safe-stringify": "^2.1.1",
         "long": "^5.2.3",
         "reflect-metadata": "^0.1.13",
@@ -1856,9 +1856,9 @@
       }
     },
     "node_modules/fabric-shim-api": {
-      "version": "2.5.7",
-      "resolved": "https://registry.npmjs.org/fabric-shim-api/-/fabric-shim-api-2.5.7.tgz",
-      "integrity": "sha512-KHLpVrzDxZhdUOaeW24XtMZ0lM+Vb6pfMyRhC0zIjx6JmJgSx71vPtdHII0yNoIpButocIeTwGd8MH3RVfUImg==",
+      "version": "2.5.8",
+      "resolved": "https://registry.npmjs.org/fabric-shim-api/-/fabric-shim-api-2.5.8.tgz",
+      "integrity": "sha512-O+lg61KDqJn1Mr+KSPaq2nnjFkusp3bLC9CjNcMiNVWtQXqXXQtOQquoSWUeUVtRtUS4WL9zMBaU6Ynz7h7U7w==",
       "license": "Apache-2.0",
       "engines": {
         "eslint": "^6.6.0",
@@ -1866,9 +1866,9 @@
       }
     },
     "node_modules/fabric-shim/node_modules/@types/node": {
-      "version": "16.18.112",
-      "resolved": "https://registry.npmjs.org/@types/node/-/node-16.18.112.tgz",
-      "integrity": "sha512-EKrbKUGJROm17+dY/gMi31aJlGLJ75e1IkTojt9n6u+hnaTBDs+M1bIdOawpk2m6YUAXq/R2W0SxCng1tndHCg==",
+      "version": "16.18.123",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-16.18.123.tgz",
+      "integrity": "sha512-/n7I6V/4agSpJtFDKKFEa763Hc1z3hmvchobHS1TisCOTKD5nxq8NJ2iK7SRIMYL276Q9mgWOx2AWp5n2XI6eA==",
       "license": "MIT"
     },
     "node_modules/fast-deep-equal": {
