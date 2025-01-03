@@ -30,5 +30,8 @@
     "fabric-shim": "2.5.7",
     "json-stringify-deterministic": "1.0.12",
     "sort-keys-recursive": "2.1.10"
-  }
+  },
+  "trustedDependencies": [
+    "protobufjs"
+  ]
 }
