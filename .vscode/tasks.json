@@ -136,13 +136,11 @@
     {
       "id": "select-peer",
       "description": "Which peer do you want to use?",
-      "default": "default",
       "type": "promptString"
     },
     {
       "id": "select-orderer",
       "description": "Which orderer do you want to use?",
-      "default": "default",
       "type": "promptString"
     },
     {
