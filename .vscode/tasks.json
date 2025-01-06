@@ -9,130 +9,215 @@
         "kind": "build",
         "isDefault": true
       },
-      "problemMatcher": []
+      "options": {
+        "env": {
+          "BTP_SERVICE_TOKEN": "${input:enter-access-token}"
+        }
+      }
     },
     {
       "label": "chaincode lifecycle - 2. deploy",
       "type": "shell",
       "command": "./lib/btp-chaincode-lifecycle/chaincode.sh install ${input:select-peer}",
-      "problemMatcher": []
+      "options": {
+        "env": {
+          "BTP_SERVICE_TOKEN": "${input:enter-access-token}"
+        }
+      }
     },
     {
       "label": "chaincode lifecycle - 3. approve",
       "type": "shell",
-      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh approve ${input:select-peer}",
-      "problemMatcher": []
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh approve ${input:select-peer} ${input:select-orderer}",
+      "options": {
+        "env": {
+          "BTP_SERVICE_TOKEN": "${input:enter-access-token}"
+        }
+      }
     },
     {
       "label": "chaincode lifecycle - 4. check commit readiness",
       "type": "shell",
       "command": "./lib/btp-chaincode-lifecycle/chaincode.sh commit-readiness ${input:select-peer}",
-      "problemMatcher": []
+      "options": {
+        "env": {
+          "BTP_SERVICE_TOKEN": "${input:enter-access-token}"
+        }
+      }
     },
     {
       "label": "chaincode lifecycle - 5. commit",
       "type": "shell",
-      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh commit ${input:select-peer}",
-      "problemMatcher": []
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh commit ${input:select-peer} ${input:select-orderer}",
+      "options": {
+        "env": {
+          "BTP_SERVICE_TOKEN": "${input:enter-access-token}"
+        }
+      }
     },
     {
       "label": "chaincode lifecycle - 6. init",
       "type": "shell",
-      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh init ${input:select-peer}",
-      "problemMatcher": []
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh init ${input:select-peer} ${input:select-orderer}",
+      "options": {
+        "env": {
+          "BTP_SERVICE_TOKEN": "${input:enter-access-token}"
+        }
+      }
     },
     {
       "label": "chaincode - query",
       "type": "shell",
       "command": "./lib/btp-chaincode-lifecycle/chaincode.sh query ${input:select-peer} ${input:select-function-name} --arguments '[${input:select-function-args}]'",
-      "problemMatcher": []
+      "options": {
+        "env": {
+          "BTP_SERVICE_TOKEN": "${input:enter-access-token}"
+        }
+      }
     },
     {
       "label": "chaincode - invoke",
       "type": "shell",
-      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh invoke ${input:select-peer} ${input:select-function-name} --arguments '[${input:select-function-args}]'",
-      "problemMatcher": []
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh invoke ${input:select-peer} ${input:select-orderer} ${input:select-function-name} --arguments '[${input:select-function-args}]'",
+      "options": {
+        "env": {
+          "BTP_SERVICE_TOKEN": "${input:enter-access-token}"
+        }
+      }
     },
     {
       "label": "list - deployed chaincode",
       "type": "shell",
       "command": "./lib/btp-chaincode-lifecycle/chaincode.sh installed ${input:select-peer}",
-      "problemMatcher": []
+      "options": {
+        "env": {
+          "BTP_SERVICE_TOKEN": "${input:enter-access-token}"
+        }
+      }
     },
     {
       "label": "list - approved chaincode",
       "type": "shell",
       "command": "./lib/btp-chaincode-lifecycle/chaincode.sh approved ${input:select-peer}",
-      "problemMatcher": []
+      "options": {
+        "env": {
+          "BTP_SERVICE_TOKEN": "${input:enter-access-token}"
+        }
+      }
     },
     {
       "label": "list - committed chaincode",
       "type": "shell",
       "command": "./lib/btp-chaincode-lifecycle/chaincode.sh committed ${input:select-peer}",
-      "problemMatcher": []
+      "options": {
+        "env": {
+          "BTP_SERVICE_TOKEN": "${input:enter-access-token}"
+        }
+      }
     },
     {
       "label": "list - peers",
       "type": "shell",
       "command": "./lib/btp-chaincode-lifecycle/chaincode.sh peers",
-      "problemMatcher": []
+      "options": {
+        "env": {
+          "BTP_SERVICE_TOKEN": "${input:enter-access-token}"
+        }
+      }
     },
     {
       "label": "list - orderers",
       "type": "shell",
       "command": "./lib/btp-chaincode-lifecycle/chaincode.sh orderers",
-      "problemMatcher": []
+      "options": {
+        "env": {
+          "BTP_SERVICE_TOKEN": "${input:enter-access-token}"
+        }
+      }
     },
     {
       "label": "list - nodes",
       "type": "shell",
       "command": "./lib/btp-chaincode-lifecycle/chaincode.sh nodes",
-      "problemMatcher": []
+      "options": {
+        "env": {
+          "BTP_SERVICE_TOKEN": "${input:enter-access-token}"
+        }
+      }
     },
     {
       "label": "list - channels",
       "type": "shell",
-      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh channels",
-      "problemMatcher": []
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh channels ${input:select-orderer}",
+      "options": {
+        "env": {
+          "BTP_SERVICE_TOKEN": "${input:enter-access-token}"
+        }
+      }
     },
     {
       "label": "channel - create",
       "type": "shell",
-      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh create-channel \"${input:create-channel-name}\" --endorsementPolicy \"${input:create-channel-endorsement-policy}\" --batchTimeoutInSeconds ${input:create-channel-batch-timeout-seconds} --maxMessageCount ${input:create-channel-max-message-count} --absoluteMaxMB ${input:create-channel-absolute-max-mb} --preferredMaxMB ${input:create-channel-preferred-max-mb}",
-      "problemMatcher": []
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh create-channel ${input:select-orderer} \"${input:create-channel-name}\" --endorsementPolicy \"${input:create-channel-endorsement-policy}\" --batchTimeoutInSeconds ${input:create-channel-batch-timeout-seconds} --maxMessageCount ${input:create-channel-max-message-count} --absoluteMaxMB ${input:create-channel-absolute-max-mb} --preferredMaxMB ${input:create-channel-preferred-max-mb}",
+      "options": {
+        "env": {
+          "BTP_SERVICE_TOKEN": "${input:enter-access-token}"
+        }
+      }
     },
     {
       "label": "channel - orderer join",
       "type": "shell",
       "command": "./lib/btp-chaincode-lifecycle/chaincode.sh  orderer-join-channel ${input:select-orderer} ${input:select-channel}",
-      "problemMatcher": []
+      "options": {
+        "env": {
+          "BTP_SERVICE_TOKEN": "${input:enter-access-token}"
+        }
+      }
     },
     {
       "label": "channel - orderer leave",
       "type": "shell",
       "command": "./lib/btp-chaincode-lifecycle/chaincode.sh orderer-leave-channel ${input:select-orderer} ${input:select-channel}",
-      "problemMatcher": []
+      "options": {
+        "env": {
+          "BTP_SERVICE_TOKEN": "${input:enter-access-token}"
+        }
+      }
     },
     {
       "label": "channel - peer join",
       "type": "shell",
       "command": "./lib/btp-chaincode-lifecycle/chaincode.sh peer-join-channel ${input:select-peer} ${input:select-channel}",
-      "problemMatcher": []
+      "options": {
+        "env": {
+          "BTP_SERVICE_TOKEN": "${input:enter-access-token}"
+        }
+      }
     },
     {
       "label": "channel - peer leave",
       "type": "shell",
       "command": "./lib/btp-chaincode-lifecycle/chaincode.sh peer-leave-channel ${input:select-peer} ${input:select-channel}",
-      "problemMatcher": []
+      "options": {
+        "env": {
+          "BTP_SERVICE_TOKEN": "${input:enter-access-token}"
+        }
+      }
     },
     {
       "label": "help",
       "type": "shell",
       "command": "./lib/btp-chaincode-lifecycle/chaincode.sh help",
-      "problemMatcher": []
     }
   ],
   "inputs": [
+    {
+      "id": "enter-access-token",
+      "description": "Enter your access token (application access token scoped atleast to a peer and orderer node, or a personal access token)",
+      "type": "promptString",
+      "password": true
+    },
     {
       "id": "select-peer",
       "description": "Which peer do you want to use?",
