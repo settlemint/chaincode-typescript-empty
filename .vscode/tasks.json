@@ -146,7 +146,17 @@
       }
     },
     {
-      "label": "list - channels",
+      "label": "list - channels - peer",
+      "type": "shell",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh channels ${input:select-peer}",
+      "options": {
+        "env": {
+          "BTP_SERVICE_TOKEN": "${input:enter-access-token}"
+        }
+      }
+    },
+    {
+      "label": "list - channels - orderer",
       "type": "shell",
       "command": "./lib/btp-chaincode-lifecycle/chaincode.sh channels ${input:select-orderer}",
       "options": {
@@ -214,18 +224,18 @@
   "inputs": [
     {
       "id": "enter-access-token",
-      "description": "Enter your access token (application access token scoped atleast to a peer and orderer node, or a personal access token)",
+      "description": "Enter your access token (scoped to the service you want to use)",
       "type": "promptString",
       "password": true
     },
     {
       "id": "select-peer",
-      "description": "Which peer do you want to use?",
+      "description": "Which peer do you want to use? (unique name for your peer)",
       "type": "promptString"
     },
     {
       "id": "select-orderer",
-      "description": "Which orderer do you want to use?",
+      "description": "Which orderer do you want to use? (unique name for your orderer)",
       "type": "promptString"
     },
     {
