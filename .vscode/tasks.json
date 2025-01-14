@@ -148,7 +148,7 @@
     {
       "label": "list - channels - peer",
       "type": "shell",
-      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh channels ${input:select-peer}",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh peer-channels ${input:select-peer}",
       "options": {
         "env": {
           "BTP_SERVICE_TOKEN": "${input:enter-access-token}"
@@ -158,7 +158,7 @@
     {
       "label": "list - channels - orderer",
       "type": "shell",
-      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh channels ${input:select-orderer}",
+      "command": "./lib/btp-chaincode-lifecycle/chaincode.sh orderer-channels ${input:select-orderer}",
       "options": {
         "env": {
           "BTP_SERVICE_TOKEN": "${input:enter-access-token}"
