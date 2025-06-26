@@ -1,6 +1,6 @@
 # DEPENDENCIES
 # fabric-shim needs node ^18.0.0
-FROM node:22.16.0-bullseye AS build
+FROM node:22.17.0-bullseye AS build
 
 RUN --mount=type=cache,sharing=locked,target=/var/cache/apt \
   export DEBIAN_FRONTEND=noninteractive \
