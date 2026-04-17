@@ -28,7 +28,7 @@
     "class-transformer": "0.5.1",
     "fabric-contract-api": "2.5.8",
     "fabric-shim": "2.5.8",
-    "json-stringify-deterministic": "1.0.12",
+    "json-stringify-deterministic": "1.0.13",
     "sort-keys-recursive": "2.1.10"
   },
   "trustedDependencies": [
