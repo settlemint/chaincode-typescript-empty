@@ -23,7 +23,7 @@
         "eslint-config-prettier": "10.1.8",
         "eslint-plugin-import": "2.32.0",
         "eslint-plugin-node": "11.1.0",
-        "eslint-plugin-promise": "7.2.1",
+        "eslint-plugin-promise": "7.3.0",
         "prettier": "3.8.1",
         "ts-generator": "0.1.1",
         "ts-node": "10.9.2",
@@ -539,7 +539,6 @@
       "resolved": "https://registry.npmjs.org/@types/node/-/node-22.19.7.tgz",
       "integrity": "sha512-MciR4AKGHWl7xwxkBa6xUGxQJ4VBOmPTF7sL+iGzuahOFaO0jHCsuEfS80pan1ef4gWId1oWOweIhrDEYLuaOw==",
       "license": "MIT",
-      "peer": true,
       "dependencies": {
         "undici-types": "~6.21.0"
       }
@@ -609,7 +608,6 @@
       "integrity": "sha512-BtE0k6cjwjLZoZixN0t5AKP0kSzlGu7FctRXYuPAm//aaiZhmfq1JwdYpYr1brzEspYyFeF+8XF5j2VK6oalrA==",
       "dev": true,
       "license": "MIT",
-      "peer": true,
       "dependencies": {
         "@typescript-eslint/scope-manager": "8.54.0",
         "@typescript-eslint/types": "8.54.0",
@@ -814,7 +812,6 @@
       "integrity": "sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==",
       "dev": true,
       "license": "MIT",
-      "peer": true,
       "bin": {
         "acorn": "bin/acorn"
       },
@@ -1568,7 +1565,6 @@
       "integrity": "sha512-LEyamqS7W5HB3ujJyvi0HQK/dtVINZvd5mAAp9eT5S/ujByGjiZLCzPcHVzuXbpJDJF/cxwHlfceVUDZ2lnSTw==",
       "dev": true,
       "license": "MIT",
-      "peer": true,
       "dependencies": {
         "@eslint-community/eslint-utils": "^4.8.0",
         "@eslint-community/regexpp": "^4.12.1",
@@ -1835,9 +1831,9 @@
       }
     },
     "node_modules/eslint-plugin-promise": {
-      "version": "7.2.1",
-      "resolved": "https://registry.npmjs.org/eslint-plugin-promise/-/eslint-plugin-promise-7.2.1.tgz",
-      "integrity": "sha512-SWKjd+EuvWkYaS+uN2csvj0KoP43YTu7+phKQ5v+xw6+A0gutVX2yqCeCkC3uLCJFiPfR2dD8Es5L7yUsmvEaA==",
+      "version": "7.3.0",
+      "resolved": "https://registry.npmjs.org/eslint-plugin-promise/-/eslint-plugin-promise-7.3.0.tgz",
+      "integrity": "sha512-6uGiOR0INuujr6PEQmeSSP7GbIMJ/ebEXXiEzb/nOj68LknH5Pxzb/AbZivmr6VE6TkTE8rTjRK9zhKpK6HsRA==",
       "dev": true,
       "license": "ISC",
       "dependencies": {
@@ -1850,7 +1846,7 @@
         "url": "https://opencollective.com/eslint"
       },
       "peerDependencies": {
-        "eslint": "^7.0.0 || ^8.0.0 || ^9.0.0"
+        "eslint": "^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0"
       }
     },
     "node_modules/eslint-scope": {
@@ -3418,7 +3414,6 @@
       "integrity": "sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q==",
       "dev": true,
       "license": "MIT",
-      "peer": true,
       "engines": {
         "node": ">=12"
       },
@@ -4343,7 +4338,6 @@
       "integrity": "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==",
       "dev": true,
       "license": "Apache-2.0",
-      "peer": true,
       "bin": {
         "tsc": "bin/tsc",
         "tsserver": "bin/tsserver"
