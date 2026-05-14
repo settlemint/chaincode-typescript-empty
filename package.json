@@ -11,7 +11,7 @@
     "build": "tsc"
   },
   "devDependencies": {
-    "@types/node": "22.19.7",
+    "@types/node": "22.19.19",
     "@typescript-eslint/eslint-plugin": "8.54.0",
     "@typescript-eslint/parser": "8.54.0",
     "eslint": "9.39.2",
